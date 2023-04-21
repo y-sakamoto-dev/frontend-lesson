@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- 1. 簡単な自己紹介プログラムの作成
+		ユーザーに名前、年齢、趣味を入力してもらい、それらの情報を使って自己紹介文を出力するプログラムを作成してください。 -->
+		<div class="self-introduction">
+			<label for="age-input">名前：</label>
+			<input
+				type="name"
+				id="name"
+				name="name"
+				value=""
+			/>
+
+			<label for="age-input">歳：</label>
+			<input
+				type="number"
+				id="age"
+				name="age"
+				value=""
+			/>
+
+			<label for="age-input">趣味：</label>
+			<input
+				type="text"
+				id="text"
+				name="text"
+				value=""
+			/>
+
+			<button id="button">送信</button>
+
+			<div id="introduction"></div>
+		</div>
+
+		<!-- 2. ユーザーの誕生日に応じた星座を表示するプログラム
+		ユーザーに誕生月と誕生日を入力してもらい、それに応じた星座を表示するプログラムを作成してください。例えば、3
+		月 21 日から 4 月 19 日までの間は牡羊座です。  -->
+
+		<div class="sign-area">
+			<label for="birthday">誕生日：</label>
+			<input
+				type="number"
+				id="month"
+				name="month"
+				value=""
+			/>
+			月
+			<input
+				type="number"
+				id="day"
+				name="day"
+				value=""
+			/>
+			日
+
+			<button id="sign-button">結果</button>
+
+			<div id="sign-answer"></div>
+		</div>
+
+		<!-- 3. 奇数と偶数の判定
+		ユーザーに数値を入力してもらい、その数値が奇数か偶数かを判定し、結果を表示するプログラムを作成してください。 -->
+
+		<!-- 4. FizzBuzz プログラム 1 から 100
+		までの数を順番に表示するプログラムを作成してください。ただし、3
+		の倍数の場合は "Fizz"、5 の倍数の場合は "Buzz"、3 と 5 の公倍数の場合は
+		"FizzBuzz" と表示してください。 -->
+
+		<!-- 5. 配列内の最大値と最小値を求める
+		配列内の数値の中で最大値と最小値を見つけ、表示するプログラムを作成してください。配列の要素は事前に与えられたものを使用してください。
+		const numbers = [12, 45, 23, 67, 89, 34, 20, 7, 98, 54]; -->
+
+		<script
+			type="module"
+			src="./js/main.js"
+		></script>
+	</body>
+</html>
