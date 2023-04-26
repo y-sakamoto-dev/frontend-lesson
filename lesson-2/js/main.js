@@ -35,6 +35,19 @@ signButton.addEventListener('click', () => {
 // 3. 奇数と偶数の判定
 //    ユーザーに数値を入力してもらい、その数値が奇数か偶数かを判定し、結果を表示するプログラムを作成してください。
 
+const numberButton = document.getElementById('number-button');
+
+numberButton.addEventListener('click', () => {
+	const number = document.getElementById('number');
+	const numberAnswer = document.getElementById('number-answer');
+	const numberItem = number.value;
+
+	if (numberItem % 2 === 0) {
+		numberAnswer.innerText = '偶数です';
+	} else {
+		numberAnswer.innerText = '奇数です';
+	}
+});
 // 4. FizzBuzz プログラム
 //    1 から 100 までの数を順番に表示するプログラムを作成してください。ただし、3 の倍数の場合は "Fizz"、5 の倍数の場合は "Buzz"、3 と 5 の公倍数の場合は "FizzBuzz" と表示してください。
 
