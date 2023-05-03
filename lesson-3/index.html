@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>フロントエンドjs練習</title>
+	</head>
+	<body>
+		<!-- 1. シンプルなタイマー []
+ユーザーが指定した秒数をカウントダウンするタイマーを作成してください。タイマーが 0 になったら、「タイムアップ！」と表示し、タイマーを停止させます。 -->
+
+		<div>
+			<label for="seconds">秒数：</label>
+			<input
+				type="number"
+				id="seconds"
+				value=""
+			/>
+			<button id="start">スタート</button>
+		</div>
+		<div id="timer"></div>
+
+		<br />
+		<br />
+		<br />
+		<!-- 2. リストのソート []
+JavaScript の配列に格納された数値を、昇順または降順にソートし、結果を Web ページ上に表示してください。ソート方法は、ユーザーが選択できるようにしてください。 -->
+		<label
+			>ソート方法：
+			<select
+				name="sortType"
+				id="sortType"
+			>
+				<option
+					id="asc"
+					value="asc"
+				>
+					昇順
+				</option>
+				<option
+					id="desc"
+					value="desc"
+				>
+					降順
+				</option>
+			</select>
+		</label>
+		<br />
+		<button id="sortButton">ソートする</button>
+		<div id="result"></div>
+
+		<br />
+		<br />
+
+		<!-- 3. 簡易的な ToDo リスト []
+ユーザーがタスクを追加できる簡単な ToDo リストを作成してください。タスクは、テキスト入力欄で入力され、追加ボタンを押すことでリストに追加されます。また、リストの各タスクには削除ボタンを設置し、そのボタンを押すことでタスクをリストから削除できるようにしてください。 -->
+
+		<label for="newTask">タスクを追加:</label>
+		<input
+			type="text"
+			id="newTask"
+			value=""
+		/>
+		<button id="taskButton">追加</button>
+		<ul id="taskList"></ul>
+
+		<script
+			type="module"
+			src="./js/main.js"
+		></script>
+	</body>
+</html>
